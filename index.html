@@ -7,119 +7,13 @@
     <title>Welcome | Some1</title>
 </head>
 <body>
+    <button>
     <canvas></canvas>
     <script>
-function distance(x1, y1, x2, y2) {
-    let xDist = x1 - x2;
-    let yDist = y1 - y2;
-
-    return Math.hypot(xDist, yDist);
-}
-
-const canvas = document.querySelector("canvas")
-const c = canvas.getContext("2d");
-addEventListener("load", () => {
-  canvas.width = innerWidth
-  canvas.height = innerHeight
-  addEventListener("resize", () => {
-    canvas.width = innerWidth
-    canvas.height = innerHeight
-  })
-})
-
-let mouse = {
-  x: undefined,
-  y: undefined
-}
-addEventListener("mousemove", (e) => {
- mouse.x = e.clientX;
- mouse.y = e.clientY;
-})
-
-let coins = 0;
-
-
-class Circle1 {
-  constructor() {
-    this.x = innerWidth/2
-    this.y = innerHeight/2
-    this.radius = 100
-    this.colour = "black";
-  }
-  draw() {
-    c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2 , false);
-    c.fillStyle = this.colour;
-    c.fill();
-    c.closePath();
-  }
-  update() {
-    this.draw();
-
-  }
-}
-class Circle2 {
-  constructor() {
-    this.x = undefined;
-    this.y = undefined;
-    this.radius = 20
-    this.color = "blue";
-  }
-  draw() {
-    c.fillStyle = this.color;
-    c.beginPath();
-    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2 , false);
-    c.fill();
-    c.closePath();
-  }
-  update() {
-    this.draw();
-
-    this.x = mouse.x;
-    this.y = mouse.y;
-  }
-}
-
-let circle2 = new Circle2();
-let circle1 = new Circle1();
-
-
-
-function animate() {
-  requestAnimationFrame(animate);
-  c.clearRect(0, 0, innerWidth, innerHeight);
-  circle1.update();
-  circle2.update();
-
-  c.fillStyle = "black"
-  c.fontStyle = "50px Verdana"
-  c.fillText("Coins: " + coins, innerWidth/2, 30)
-
-  if(coins > 0) {
-  }
-
-  if( coins == 150) {
-      coins = 0;
-      circle1.y = innerHeight/2
-      circle1.x = innerWidth/2
-  }
-  if(distance(circle1.x, circle1.y, circle2.x, circle2.y) <= circle1.radius + circle2.radius) {
-   circle2.y = innerHeight/2 - circle1.radius
-   circle2.x = innerWidth/2 - circle1.radius
-
-   coins += 1;
-
-
-  } else{
-    circle1.colour = "black";
-  }
-
-  console.log(circle2.x)
-
-}
-
-animate();
-
+        console.log("i see you have javascript")
   </script>
+    <noscript>
+        You dont have JS on this browser
+        </noscript>
 </body>
 </html>
