@@ -1,1 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap');
 
+* {
+    font-family: 'Comic Neue', cursive;
+    letter-spacing: 4px;
+    background-color: #1a1919;
+}
+
+
+
+.textlmao {
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profile {
+    border-radius: 100%;
+    max-width: 125px;
+    position: absolute;
+    left: 565px;
+    top: 100px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.btn-1 {
+    width: 150px;
+    height: 75px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(6, 24, 48);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #58c482;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+}   
+
+.btn-1:hover {
+    box-shadow: inset 50 0 0 0 #58c482;
+    cursor: pointer;
+    color: #000;
+    background-color: #58c482;
+}
+
+.btn-2 {
+    width: 150px;
+    height: 75px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(6, 24, 48);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #58c482;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn-2:hover {
+    box-shadow: inset 50 0 0 0 #58c482;
+    cursor: pointer;
+    color: #000;
+    background-color: #58c482;
+}
+
+.btn-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 561px;
+    top: 400px;
+    width: 150px;
+    height: 75px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(6, 24, 48);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 #58c482;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+}
+
+.btn-3:hover {
+    box-shadow: inset 50 0 0 0 #58c482;
+    cursor: pointer;
+    color: #000;
+    background-color: #58c482;
+}
