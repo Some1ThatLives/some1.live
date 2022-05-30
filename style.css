@@ -16,14 +16,6 @@
     text-align: center;
 }
 
-.profile {
-    border-radius: 100%;
-    max-width: 125px;
-    position: absolute;
-    left: 565px;
-    top: 100px;
-}
-
 
 .container {
     display: flex;
@@ -73,6 +65,12 @@
     color: #000;
     background-color: #58c482;
 }
+
+.profile {
+    border-radius: 100%;
+    max-width: 125px;
+}
+
 .btn-3 {
     width: 150px;
     height: 75px;
