@@ -73,16 +73,7 @@
     color: #000;
     background-color: #58c482;
 }
-
 .btn-3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    left: 561px;
-    top: 400px;
     width: 150px;
     height: 75px;
     border: none;
@@ -101,16 +92,7 @@
     color: #000;
     background-color: #58c482;
 }
-
 .btn-4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    position: absolute;
-    left: 561px;
-    top: 500px;
     width: 150px;
     height: 75px;
     border: none;
@@ -129,3 +111,4 @@
     color: #000;
     background-color: #58c482;
 }
+
